@@ -13,7 +13,7 @@
 /*MOBILE FIRST*/
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
-    background-color: var(--grey_100);
+    background-color: var(--white);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -40,33 +40,33 @@ main{
         padding: 2rem;
         display: flex;
         flex-direction: column;
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .card-two{
         background: var(--grey_500);
         border-radius: 0.8rem;
         padding: 1.5rem;
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .card-three{
         background: var(--white);
         color : var(--black);
         border-radius: 1rem;
         padding: 1.5rem;
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 .card-four{
         background: var(--dark_blue);
         border-radius: 0.8rem;
         padding: 1.5rem;
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .card-five{
         background: var(--white);
         color : var(--black);
         border-radius: 0.8rem;
         padding: 1.5rem;
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 .card-header{
         display: flex;
