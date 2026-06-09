@@ -9,6 +9,8 @@
    --grey_500 : hsl(217, 19%, 35%);
    --dark_blue : hsl(219, 29%, 14%);
    --black : hsl(0, 0%, 7%);
+   --shadow-sm: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+   --shadow-lg: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 /*MOBILE FIRST*/
 body{
@@ -19,7 +21,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     color: var(--white);
-    padding: 2rem 2rem; 
+    padding: clamp(1rem, 4vw, 2rem);
     
 }
 main{
@@ -30,43 +32,43 @@ main{
     display: flex;
     flex-direction: column;
     gap:2rem;
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
 }
 
 /* =================CARDS =======================*/
 .card-one{
         background: var(--purple_500);
         border-radius: 0.8rem;
-        padding: 2rem;
+        padding: clamp(1rem, 4vw, 2rem);
         display: flex;
         flex-direction: column;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        box-shadow: var(--shadow-sm);
 }
 .card-two{
         background: var(--grey_500);
         border-radius: 0.8rem;
-        padding: 1.5rem;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        padding: clamp(1rem, 3vw, 1.5rem);
+        box-shadow: var(--shadow-sm);
 }
 .card-three{
         background: var(--white);
         color : var(--black);
         border-radius: 1rem;
-        padding: 1.5rem;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+        padding: clamp(1rem, 3vw, 1.5rem);
+        box-shadow: var(--shadow-lg);
 }
 .card-four{
         background: var(--dark_blue);
         border-radius: 0.8rem;
-        padding: 1.5rem;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        padding: clamp(1rem, 3vw, 1.5rem);
+        box-shadow: var(--shadow-sm);
 }
 .card-five{
         background: var(--white);
         color : var(--black);
         border-radius: 0.8rem;
-        padding: 1.5rem;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+        padding: clamp(1rem, 3vw, 1.5rem);
+        box-shadow: var(--shadow-lg);
 }
 .card-header{
         display: flex;
@@ -97,7 +99,7 @@ main{
     font-weight: 600;
     font-size: 1.1rem;
     line-height: 1.4;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
     
 }
 .test-body{
